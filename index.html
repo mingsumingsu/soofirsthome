@@ -3,24 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="강민수" content="여기 주인은 나요">
-    <mete name="홈피내용" content="태그연습"
-    <title>html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 18%;
+            font-family: 'Jua', sans-serif;
+            
+        }
+        .nav li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: mediumaquamarine;
+        }
+        .nav li a:hover {
+            font-size: 25px;
+            color: aqua;
+        }
+        .Morning, .k5, .sonata, .Sorento {
+            text-align: center;
+            margin-top: 250px;
+        }
+        .carName {
+            font-family: 'Jua', sans-serif;
+            font-size: 50px;
+        }
+        .carAt {
+            font-family: 'Jua', sans-serif;
+        }
+        #Mn {
+            margin-top: 100px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            color: teal;
+        }
+        .position {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #side {
+            position: sticky;
+            top: 300px;
+            right: 100px;
+        }
+        #side input {
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        #side label {
+            font-weight: bolder;
+        }
+        .car33 {
+            width: 250px;
+        }
+        #buyBtn {
+            width: 120px;
+            margin-left: 100px;
+            background-color: white;
+            font-weight: bolder;
+        }
+        #buyBtn:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<h1>프로그래밍의 기초</h1>
-<ol>
-    <li><a href="1교시.html"target= "blank"><h3>3월28일 태그연습</h3></a></li>
-    <li><a href="table.html"><h3>3월28일 테이블만들기</h3></a></li>
-    <li><a href="4월4일 1교시.html"target= "blank"><h3>4월4일 1교시.html</h3></a></li>
-    <li><a href="시맨틱태그연습2.html"target= "blank"><h3>시맨틱태그연습2.html</h3></a></li>
-    <li><a href="폼태그.html"target= "blank"><h3>폼태그.html</h3></a></li>
-    <li><h3><a href="/css/css공부.html">css</a></h3></li>
-    <li><h3>자바스크립트</h3></li>
-</ol>
-<img src="img/img_html.jpg.png" alt="html 태그그림"width=100%">
-<p><strong>HTML(<u>(Hyper Text Markup Language)</u>은 가장 단순한 형태의 웹 언어이다.</strong> 웹 서버에 HTML 문서를 저장하고 있다가 클라이언트가 특정 HTML 페이지를 요청하면 해당 HTML 문서를 클라이언트로 전송한다. 그러면 클라이언트는 이 웹 페이지를 해석하여 웹 브라우저에 표현해 주는데 이런 웹 페이지를 정적인(Static) 웹 페이지라고 한다.<p/>
+    <h1>m.s렌트카</h1>
+    <hr>
+<div class="nav">
+    <ul>
+        <li><a href="#t1">모닝</a></li>
+        <li><a href="#t2">k5</a></li>
+        <li><a href="#t3">쏘나타 DN8</a></li>
+        <li><a href="#t4">쏘렌토</a></li>
+    </ul>
+</div>
+<div class="position">
+    <div>
+        <div class="Morning" id="Mn">
+            <a id="t1" class="carName">모닝</a>
+            <div>    
+                <a href="morning.html"><img  src="img/모닝.png" alt="" width="700"></a>
+                <div class="carAt">
+                    연식:2022년식
+                </div>
+                <div class="carAt">
+                    연료:가솔린
+                </div>
+                <div class="carAt">
+                    예약가격:60000원(1일기준)
+                </div>
+                <div class="carAt">
+                    승차인원:5인승
+                </div>
+            </div>
+        </div>
 
-<>[네이버 지식백과] HTML (정보 보안 개론, 2013. 6. 28., 양대일)<p/>
+
+
+        <div class="k5">
+            <a id="t2" class="carName">K5</a>
+            <div>    
+                <a href="k5.html"><img src="img/k5.png" alt="" width="700"></a>
+                <div class="carAt">
+                    연식:2022년식
+                </div>
+                <div class="carAt">
+                    연료:LPG
+                </div>
+                <div class="carAt">
+                    예약가격:80000원(1일기준)
+                </div>
+                <div class="carAt">
+                    승차인원:5인승
+                </div>
+            </div>
+        </div>
+
+        <div class="sonata">
+            <a id="t3" class="carName"> 쏘나타</a>
+            <div>
+                <a href="sonata.html"> <img src="img/dn8.png" alt="" width="700"></a>
+                <div class="carAt">
+                    연식:2022년식
+                </div>
+                <div class="carAt">
+                    연료:가솔린
+                </div>
+                <div class="carAt">
+                    예약가격:80000원(1일기준)
+                </div>
+                <div class="carAt">
+                    승차인원:5인승
+                </div>
+            </div>
+        </div>
+
+        <div class="Sorento">
+            <a id="t4" class="carName">쏘렌토</a>
+            <div>
+                <a href="Sorento.html"><img src="img/쏘렌토.png" alt="" width="700"></a>
+                <div class="carAt">
+                    연식:2022년식
+                </div>
+                <div class="carAt">
+                    연료:디젤
+                </div>
+                <div class="carAt">
+                    예약가격:100000원(1일기준)
+                </div>
+                <div class="carAt">
+                    승차인원:7인승
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="side">
+            <h3 style="font-size: 30px;">
+                예약하기
+            </h3>
+            <form action="">
+                <div>
+                    <label for="car1">차종 : </label>
+                    <input type="text" class="car33" list="carList" required>
+                    <datalist id="carList">
+                        <option value="모닝"></option>
+                        <option value="K5"></option>
+                        <option value="소나타"></option>
+                        <option value="쏘렌토"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="car2">연식 : </label>
+                    <input type="number" class="car33" min="1990" max="2022" required>
+                </div>
+                <div>
+                    <label for="car3">기간 : </label>
+                    <input type="date" id="car3" > ~ <input type="date" required>
+                </div>
+                <div>
+                    <input type="submit" value="예약 확인" id="buyBtn">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
-</html> 
+</html>
